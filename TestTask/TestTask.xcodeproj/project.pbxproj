@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF8BD7ED21653D0A0074BF8A /* APIManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BD7EC21653D0A0074BF8A /* APIManeger.swift */; };
+		FF8BD7EF21653D280074BF8A /* UIManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BD7EE21653D280074BF8A /* UIManeger.swift */; };
 		FFB33589215AD8D900B6D9CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB33588215AD8D900B6D9CF /* AppDelegate.swift */; };
 		FFB3358B215AD8D900B6D9CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3358A215AD8D900B6D9CF /* ViewController.swift */; };
 		FFB3358E215AD8D900B6D9CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB3358C215AD8D900B6D9CF /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF8BD7EC21653D0A0074BF8A /* APIManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManeger.swift; sourceTree = "<group>"; };
+		FF8BD7EE21653D280074BF8A /* UIManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManeger.swift; sourceTree = "<group>"; };
 		FFB33585215AD8D800B6D9CF /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB33588215AD8D900B6D9CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFB3358A215AD8D900B6D9CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		FFD3880E2162B4030010D1F6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FF8BD7EC21653D0A0074BF8A /* APIManeger.swift */,
+				FF8BD7EE21653D280074BF8A /* UIManeger.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8BD7EF21653D280074BF8A /* UIManeger.swift in Sources */,
+				FF8BD7ED21653D0A0074BF8A /* APIManeger.swift in Sources */,
 				FFB3358B215AD8D900B6D9CF /* ViewController.swift in Sources */,
 				FFB33591215AD8D900B6D9CF /* TestTask.xcdatamodeld in Sources */,
 				FFB33589215AD8D900B6D9CF /* AppDelegate.swift in Sources */,

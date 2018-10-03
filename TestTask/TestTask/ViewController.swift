@@ -16,12 +16,17 @@ class ViewController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var numberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var errorView: UIView!
+    @IBOutlet weak var consTop: NSLayoutConstraint!
     
     
     // MARK: - Override
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.errorView.isHidden = true
+        self.consTop.constant = 10
         self.numberView.layer.cornerRadius = 8;
         self.passwordTextField.layer.cornerRadius = 8;
         self.logInButton.layer.cornerRadius = 8;
@@ -31,26 +36,45 @@ class ViewController: UIViewController , UITextFieldDelegate{
     }
     // MARK: - EndEditing
     @IBAction func loginEndEditing(_ sender: UITextField) {
-        updateButtonColor()
-    }
-    @IBAction func passwordEndEditing(_ sender: UITextField) {
-        updateButtonColor()
-    }
-    
-    
-    @IBAction func logIn(_ sender: UIButton) {
-        
-    }
-    
-    
-    
-    func updateButtonColor() {
-        if ((numberTextField.text?.isEmpty)! == false && (passwordTextField.text?.isEmpty)! == false)  {
-            self.logInButton.backgroundColor = UIColor(red:56/255 , green: 151/255, blue: 241/255, alpha: 1)
-            self.logInButton.titleLabel?.textColor = UIColor.white
+        guard let numbertext = numberTextField.text else {
+            return
+        }
+        guard let passwordtext = passwordTextField.text else {
+            return
+        }
+        if (numbertext.isEmpty == false && passwordtext.isEmpty == false)  {
+            logInButton.backgroundColor = UIColor(red:56/255 , green: 151/255, blue: 241/255, alpha: 1)
+            logInButton.titleLabel?.textColor = UIColor.white
             
         }
     }
-    
+    @IBAction func passwordEndEditing(_ sender: UITextField) {
+        guard let numbertext = numberTextField.text else {
+            return
+        }
+        guard let passwordtext = passwordTextField.text else {
+            return
+        }
+        if (numbertext.isEmpty == false && passwordtext.isEmpty == false)  {
+            logInButton.backgroundColor = UIColor(red:56/255 , green: 151/255, blue: 241/255, alpha: 1)
+            logInButton.titleLabel?.textColor = UIColor.white
+            
+        }
+    }
+    // MARK: - Action
+    @IBAction func logIn(_ sender: UIButton) {
+        guard let numbertext = numberTextField.text else {
+            return
+        }
+        guard let passwordtext = passwordTextField.text else {
+            return
+        }
+        if (numbertext != "961235555" || passwordtext != "text"){
+            self.errorView.isHidden = false
+            self.consTop.constant = 80
+            self.logInButton.backgroundColor = UIColor(red:56/255 , green: 151/255, blue: 241/255, alpha: 1)
+            self.logInButton.titleLabel?.textColor = UIColor.white
+        }
+    }
 }
 
