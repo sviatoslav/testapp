@@ -70,10 +70,12 @@ class ViewController: UIViewController , UITextFieldDelegate{
             return
         }
         if (numbertext != "961235555" || passwordtext != "text"){
-            self.errorView.isHidden = false
-            self.consTop.constant = 80
-            self.logInButton.backgroundColor = UIColor(red:56/255 , green: 151/255, blue: 241/255, alpha: 1)
-            self.logInButton.titleLabel?.textColor = UIColor.white
+            DispatchQueue.main.async() {
+                self.errorView.isHidden = false
+                self.consTop.constant = 80
+                self.logInButton.backgroundColor = UIColor(red:56/255 , green: 151/255, blue: 241/255, alpha: 1)
+                self.logInButton.titleLabel?.textColor = UIColor.white
+            }
         }
     }
 }
