@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF207070216A3C4B00AE8AFA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20706F216A3C4B00AE8AFA /* ProfileViewController.swift */; };
+		FF207073216A420000AE8AFA /* UserDataJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF207072216A420000AE8AFA /* UserDataJSON.swift */; };
+		FF54A6292169659600E90201 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF54A6282169659600E90201 /* HelpViewController.swift */; };
+		FF5654FE216BFFF100A2F117 /* DataUserManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5654FD216BFFF100A2F117 /* DataUserManeger.swift */; };
 		FF8BD7ED21653D0A0074BF8A /* APIManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BD7EC21653D0A0074BF8A /* APIManeger.swift */; };
 		FF8BD7EF21653D280074BF8A /* UIManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BD7EE21653D280074BF8A /* UIManeger.swift */; };
 		FFB33589215AD8D900B6D9CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB33588215AD8D900B6D9CF /* AppDelegate.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF20706F216A3C4B00AE8AFA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FF207072216A420000AE8AFA /* UserDataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataJSON.swift; sourceTree = "<group>"; };
+		FF54A6282169659600E90201 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		FF5654FD216BFFF100A2F117 /* DataUserManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUserManeger.swift; sourceTree = "<group>"; };
 		FF8BD7EC21653D0A0074BF8A /* APIManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManeger.swift; sourceTree = "<group>"; };
 		FF8BD7EE21653D280074BF8A /* UIManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManeger.swift; sourceTree = "<group>"; };
 		FFB33585215AD8D800B6D9CF /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +49,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF20706E216A3AB500AE8AFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF54A6282169659600E90201 /* HelpViewController.swift */,
+				FFB3358A215AD8D900B6D9CF /* ViewController.swift */,
+				FF20706F216A3C4B00AE8AFA /* ProfileViewController.swift */,
+				FF5654FD216BFFF100A2F117 /* DataUserManeger.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF207071216A415B00AE8AFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF207072216A420000AE8AFA /* UserDataJSON.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FFB3357C215AD8D800B6D9CF = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +87,10 @@
 		FFB33587215AD8D800B6D9CF /* TestTask */ = {
 			isa = PBXGroup;
 			children = (
+				FF207071216A415B00AE8AFA /* Model */,
+				FF20706E216A3AB500AE8AFA /* Controller */,
 				FFD3880E2162B4030010D1F6 /* Helpers */,
 				FFB33588215AD8D900B6D9CF /* AppDelegate.swift */,
-				FFB3358A215AD8D900B6D9CF /* ViewController.swift */,
 				FFB3358C215AD8D900B6D9CF /* Main.storyboard */,
 				FFB33592215AD8DB00B6D9CF /* Assets.xcassets */,
 				FFB33594215AD8DB00B6D9CF /* LaunchScreen.storyboard */,
@@ -152,9 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF207073216A420000AE8AFA /* UserDataJSON.swift in Sources */,
 				FF8BD7EF21653D280074BF8A /* UIManeger.swift in Sources */,
+				FF54A6292169659600E90201 /* HelpViewController.swift in Sources */,
 				FF8BD7ED21653D0A0074BF8A /* APIManeger.swift in Sources */,
+				FF5654FE216BFFF100A2F117 /* DataUserManeger.swift in Sources */,
 				FFB3358B215AD8D900B6D9CF /* ViewController.swift in Sources */,
+				FF207070216A3C4B00AE8AFA /* ProfileViewController.swift in Sources */,
 				FFB33591215AD8D900B6D9CF /* TestTask.xcdatamodeld in Sources */,
 				FFB33589215AD8D900B6D9CF /* AppDelegate.swift in Sources */,
 			);
@@ -305,7 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BAW4LPMZC;
 				INFOPLIST_FILE = TestTask/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BAW4LPMZC;
 				INFOPLIST_FILE = TestTask/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
